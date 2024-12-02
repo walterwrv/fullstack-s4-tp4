@@ -342,4 +342,99 @@ button:hover {
 .form-container input[type="number"] {
   width: 50%;
 }
-  
+
+/*NUEVOS ESTILOS*/
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 15px;
+}
+
+nav li {
+  display: inline-block;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+nav a i {
+  font-size: 20px;
+}
+
+
+
+/*CSS DE PRUEBA
+/* Estilos generales */
+.cuerpo {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Ocupa toda la altura de la pantalla */
+  background: url('https://image.europafm.com/clipping/cmsimages01/2018/02/08/6E0AECDD-34FC-4505-924E-68B1EA37EB78/104.jpg?crop=722,722,x156,y0&width=1200&height=1200&optimize=low&format=webply') no-repeat center center/cover;
+  background-size: cover;
+  color: white;
+  position: relative;
+}
+
+/* Contenedor del texto centrado */
+.welcome-container {
+  max-width: 900px;
+  margin: 0 auto;
+  background-color: rgba(0, 0, 0, 0.6); /* Fondo oscuro para mejorar la visibilidad del texto */
+  padding: 40px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+/* Estilo del título */
+.cuerpo h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+  animation: fadeIn 2s ease-out;
+}
+
+/* Estilo del párrafo */
+.cuerpo p {
+  font-size: 1.2rem;
+  margin-bottom: 40px;
+  font-family: Arial, sans-serif;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+/* Estilos para los botones */
+.cta-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.cta-button {
+  background-color: #007BFF;
+  color: white;
+  padding: 15px 25px;
+  text-decoration: none;
+  font-size: 1.1rem;
+  border-radius: 5px;
+  text-align: center;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.cta-button:hover {
+  background-color: #0056b3;
+  transform: scale(1.1);
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
