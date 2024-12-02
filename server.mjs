@@ -56,6 +56,11 @@ app.use((req, res, next) => {
 //Rutas
 app.use('/superheroes', router);
 
+// Ruta para servir el archivo inicio.html
+app.get('/', (req, res) => {
+    res.render('index', {title: 'Inicio'})
+});
+
 //manejo de errores para rutas no encontradas
 app.use((req, res)=>{
     res.status(404).send({mensaje: 'Ruta no encontrada'});
