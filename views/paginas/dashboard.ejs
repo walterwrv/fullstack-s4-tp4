@@ -14,14 +14,13 @@
         <h1>Gestión de Superhéroes</h1>
         <!-- Sección para mostrar mensajes flash -->
          <br><br>
-        <div class="p-6">
+        <div>
             <% if (success_msg && success_msg.length > 0) { %> <!-- Verifica si hay mensajes -->
-            <div id="success-message"
-                class="custom-class">
+            <div id="success-message" class="custom-class">
                 <span>
                 <%= success_msg[0] %> <!-- Muestra el primer mensaje -->
                 </span>
-                <button id="close-btn" class="custom-text">&times;</button>
+                <button id="close-btn" class="custom-text close-btn">&times;</button>
             </div>
             <% } %>
         </div>

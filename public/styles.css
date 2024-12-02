@@ -51,7 +51,7 @@ body {
 
   /*css para el dashboard*/
 
-  body {
+body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
@@ -199,6 +199,20 @@ h1 {
     font-weight: 700; /* Negrita */
     font-size: 0.875rem; /* Tamaño de fuente pequeño  */
     line-height: 1.25rem; /* Altura de línea ajustada */
+}
+
+.close-btn {
+  background: none;
+  border: none;
+  font-size: 12px; /* Tamaño de la "x" */
+  line-height: 1;
+  padding: 2px 5px; /* Reducir el tamaño interno del botón */
+  color: white; /* Color de la "x" */
+  cursor: pointer;
+  border-radius: 3px; /* Bordes redondeados */
+}
+.close-btn:hover {
+  background-color: rgba(255, 255, 255, 0.2); /* Fondo en hover */
 }
 
 /*fin dashboard*/
@@ -409,29 +423,6 @@ nav a i {
   margin-bottom: 40px;
   font-family: Arial, sans-serif;
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
-}
-
-/* Estilos para los botones */
-.cta-buttons {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-}
-
-.cta-button {
-  background-color: #007BFF;
-  color: white;
-  padding: 15px 25px;
-  text-decoration: none;
-  font-size: 1.1rem;
-  border-radius: 5px;
-  text-align: center;
-  transition: background-color 0.3s, transform 0.3s;
-}
-
-.cta-button:hover {
-  background-color: #0056b3;
-  transform: scale(1.1);
 }
 
 @keyframes fadeIn {
